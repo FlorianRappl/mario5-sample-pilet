@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "declaration": true,
+    "declaration": false,
     "noImplicitAny": false,
     "removeComments": false,
     "noLib": false,
