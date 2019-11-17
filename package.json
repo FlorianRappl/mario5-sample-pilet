@@ -33,6 +33,7 @@
     "debug-pilet": "pilet debug",
     "build-pilet": "pilet build",
     "upgrade-pilet": "pilet upgrade --force-overwrite yes",
+    "publish-pilet": "pilet publish --fresh --api-key $PILET_API_KEY --url $PILET_API_URL",
     "start": "pilet debug"
   },
   "main": "dist/index.js",
