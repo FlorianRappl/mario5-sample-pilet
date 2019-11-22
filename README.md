@@ -1,8 +1,8 @@
 # mario5-sample-pilet
 
-A pilet running the Mario5 game for the sample-piral app shell.
+A pilet running the Mario5 game for the `sample-piral` app shell.
 
-Used in the sample portal for Piral.
+Used in the [sample application](https://demo-full.piral.io) for [Piral](https://piral.io), which is a framework for microfrontends.
 
 **[Demo online](https://demo-full.piral.io/mario5)**
 
