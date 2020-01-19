@@ -6,11 +6,13 @@ import { PiletApi } from 'sample-piral';
 const Mario = React.lazy(() => import('./mario'));
 
 export function setup(app: PiletApi) {
-  app.registerMenu(() => <Link to="/mario5">Mario 5</Link>);
+  const path = '/mario5';
+
+  app.registerMenu(() => <Link to={path}>Mario 5</Link>);
 
   app.registerTile(
     () => (
-      <Link to="/mario5" className="mario-tile">
+      <Link to={path} className="mario-tile">
         Mario5
       </Link>
     ),
@@ -20,5 +22,5 @@ export function setup(app: PiletApi) {
     },
   );
 
-  app.registerPage('/mario5', Mario);
+  app.registerPage(path, Mario);
 }

@@ -1,8 +1,4 @@
-﻿@font-face {
-  font-family: 'SMB';
-  src: local('Super Mario Bros.'), url('../Assets/fonts/SuperMarioBros.ttf') format('truetype');
-  font-style: normal;
-}
+﻿@import './font';
 
 .game {
   height: 480px;

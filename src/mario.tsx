@@ -45,7 +45,7 @@ const MarioGame: React.FC = () => {
     host.current.appendChild(container);
     gamePromise.then(game => game.start());
     return () => gamePromise.then(game => game.pause());
-  });
+  }, []);
   return <div ref={host} />;
 };
 
