@@ -1,7 +1,7 @@
 {
   "name": "mario5-sample-pilet",
-  "version": "1.1.0",
-  "description": "The Mario5 sample as a separate page.",
+  "version": "1.2.0",
+  "description": "A sample pilet for playing Mario5.",
   "keywords": [
     "pilet"
   ],
@@ -11,9 +11,16 @@
     "@types/react-dom": "^16.9.4",
     "@types/react-router": "^5.1.3",
     "@types/react-router-dom": "^5.1.2",
-    "piral-cli": "^0.8.4",
+    "react": "latest",
+    "@dbeining/react-atom": "latest",
+    "@libre/atom": "latest",
+    "react-dom": "latest",
+    "react-router-dom": "latest",
+    "tslib": "latest",
+    "piral-cli": "latest",
+    "piral-cli-parcel": "latest",
     "reactstrap": "^8.0.1",
-    "sample-piral": "0.8.4",
+    "sample-piral": "latest",
     "sass": "^1.23.6"
   },
   "peerDependencies": {
@@ -42,22 +49,6 @@
   ],
   "piral": {
     "comment": "Keep this section to allow running `piral upgrade`.",
-    "name": "sample-piral",
-    "version": "0.8.4",
-    "tooling": "0.8.4",
-    "externals": [
-      "reactstrap"
-    ],
-    "files": [],
-    "scripts": {
-      "start": "pilet debug",
-      "upgrade-pilet": "pilet upgrade --force-overwrite yes"
-    },
-    "validators": {},
-    "devDependencies": {},
-    "preScaffold": "",
-    "postScaffold": "",
-    "preUpgrade": "",
-    "postUpgrade": ""
+    "name": "sample-piral"
   }
 }
