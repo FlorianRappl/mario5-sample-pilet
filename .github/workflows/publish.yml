@@ -10,9 +10,9 @@ jobs:
     name: Build and Deploy
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
+    - uses: actions/checkout@v2
     - name: Publish Pilet
-      uses: smapiot/publish-pilet-action@master
+      uses: smapiot/publish-pilet-action@v3
       with:
         feed: sample
         api-key: ${{ secrets.apiKey }}
