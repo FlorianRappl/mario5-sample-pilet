@@ -11,12 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - name: Setup node
-      uses: actions/setup-node@v1
-      with:
-        node-version: "16.6.1"
     - name: Publish Pilet
-      uses: smapiot/publish-pilet-action@v2
+      uses: smapiot/publish-pilet-action@master
       with:
         feed: sample
         api-key: ${{ secrets.apiKey }}
