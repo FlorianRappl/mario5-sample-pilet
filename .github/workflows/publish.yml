@@ -8,7 +8,7 @@ on:
 jobs:
   publish-pilet:
     name: Build and Deploy
-    runs-on: [ubuntu-16.04]
+    runs-on: [ubuntu-latest]
     steps:
     - uses: actions/checkout@master
     - name: Publish Pilet
