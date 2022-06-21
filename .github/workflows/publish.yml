@@ -12,7 +12,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Publish Pilet
-      uses: smapiot/publish-pilet-action@v3
+      uses: smapiot/publish-pilet-action@main
       with:
         feed: sample
         api-key: ${{ secrets.apiKey }}
