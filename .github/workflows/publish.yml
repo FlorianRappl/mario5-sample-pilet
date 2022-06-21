@@ -3,7 +3,7 @@ name: CI
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   publish-pilet:
@@ -12,7 +12,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Publish Pilet
-      uses: smapiot/publish-pilet-action@main
+      uses: smapiot/publish-pilet-action@v4
       with:
         feed: sample
         api-key: ${{ secrets.apiKey }}
