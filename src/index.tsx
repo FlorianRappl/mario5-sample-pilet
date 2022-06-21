@@ -1,16 +1,16 @@
 import './Styles/tile.scss';
 import * as React from 'react';
 import { Link } from 'react-router-dom';
-import { PiletApi } from 'sample-piral';
+import type { PiletApi } from 'sample-piral';
 
 const Mario = React.lazy(() => import('./mario'));
 
 export function setup(app: PiletApi) {
   const path = '/mario5';
 
-  app.registerMenu(() => <Link to={path}>Mario 5</Link>);
+  app.registerMenu?.(() => <Link to={path}>Mario 5</Link>);
 
-  app.registerTile(
+  app.registerTile?.(
     () => (
       <Link to={path} className="mario-tile">
         Mario5
@@ -22,5 +22,5 @@ export function setup(app: PiletApi) {
     },
   );
 
-  app.registerPage(path, Mario);
+  app.registerPage?.(path, Mario);
 }
